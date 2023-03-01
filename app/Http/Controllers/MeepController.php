@@ -16,7 +16,8 @@ class MeepController extends Controller
     public function index(): Response
     {
         return Inertia::render('Meeps/Index', [
-            //
+            'meeps' => Meep::with('user:id,name')->latest()->get(),
+
         ]);
     }
 

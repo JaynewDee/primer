@@ -1,8 +1,11 @@
 <script setup>
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
+import Meep from "@/Components/Meep.vue";
 import InputError from "@/Components/InputError.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import { useForm, Head } from "@inertiajs/vue3";
+
+defineProps(["meeps"]);
 
 const form = useForm({
     message: "",
@@ -29,6 +32,10 @@ const form = useForm({
                 <InputError :message="form.errors.message" class="mt-2" />
                 <PrimaryButton class="mt-4">Meep</PrimaryButton>
             </form>
+
+            <div class="mt-6 bg-white shadow-sm rounded-lg divide-y">
+                <Meep v-for="meep in meeps" :key="meep.id" :meep="meep" />
+            </div>
         </div>
     </AuthenticatedLayout>
 </template>
