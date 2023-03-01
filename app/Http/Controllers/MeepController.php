@@ -79,8 +79,12 @@ class MeepController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Meep $meep)
+    public function destroy(Meep $meep): RedirectResponse
     {
-        //
+        $this->authorize('delete', $meep);
+ 
+        $meep->delete();
+ 
+        return redirect(route('meeps.index'));
     }
 }

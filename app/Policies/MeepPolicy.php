@@ -46,7 +46,7 @@ class MeepPolicy
      */
     public function delete(User $user, Meep $meep): bool
     {
-        //
+        return $this->update($user, $meep);
     }
 
     /**
