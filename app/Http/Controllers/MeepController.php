@@ -62,9 +62,18 @@ class MeepController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Meep $meep)
+    public function update(Request $request, Meep $meep): RedirectResponse
     {
         //
+        $this->authorize('update', $meep);
+ 
+        $validated = $request->validate([
+            'message' => 'required|string|max:255',
+        ]);
+ 
+        $meep->update($validated);
+ 
+        return redirect(route('meeps.index'));
     }
 
     /**
