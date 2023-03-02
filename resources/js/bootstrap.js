@@ -25,7 +25,7 @@ window.Pusher = Pusher;
 
 window.Echo = new Echo({
     broadcaster: "pusher",
-    key: import.meta.env.VITE_PUSHER_APP_KEY,
+    key: "ac6a7c3a49e3aec4fa78",
     cluster: import.meta.env.VITE_PUSHER_APP_CLUSTER ?? "us2",
     wsHost: import.meta.env.VITE_PUSHER_HOST
         ? import.meta.env.VITE_PUSHER_HOST
