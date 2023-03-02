@@ -25,3 +25,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   php artisan optimize:clear
 -   php artisan config:cache
     jeepers creepers
+    meepers
