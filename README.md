@@ -19,3 +19,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   "Upgrade http resources to https on request"
 -   "You must pass your app key when you instantiate Pusher"
 -   "Unsupported cipher or incorrect key length"
+
+===
+
+-   php artisan optimize:clear
+-   php artisan config:cache
