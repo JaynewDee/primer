@@ -26,6 +26,7 @@ const submit = () => {
         <Head title="Register" />
 
         <form @submit.prevent="submit">
+            @csrf
             <div>
                 <InputLabel for="name" value="Name" />
 
