@@ -26,10 +26,10 @@ window.Pusher = Pusher;
 window.Echo = new Echo({
     broadcaster: "pusher",
     key: "ac6a7c3a49e3aec4fa78",
-    cluster: import.meta.env.VITE_PUSHER_APP_CLUSTER ?? "us2",
+    cluster: "us2",
     wsHost: import.meta.env.VITE_PUSHER_HOST
         ? import.meta.env.VITE_PUSHER_HOST
-        : `ws-${import.meta.env.VITE_PUSHER_APP_CLUSTER}.pusher.com`,
+        : `ws-us2.pusher.com`,
     wsPort: import.meta.env.VITE_PUSHER_PORT ?? 80,
     wssPort: import.meta.env.VITE_PUSHER_PORT ?? 443,
     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? "https") === "https",
