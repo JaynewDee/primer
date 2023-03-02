@@ -25,3 +25,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   php artisan optimize:clear
 -   php artisan config:cache
 -   heroku builds:cache:purge -a meep-laravel
+-   give storage-write permissions: chmod -R gu+w storage
+-   give cache-write permissions: sudo chmod -R gu+w bootstrap/cache
