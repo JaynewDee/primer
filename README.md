@@ -11,3 +11,10 @@ Thank you for considering contributing to the Laravel framework! The contributio
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+===
+
+### Deployment error log
+
+-   "Upgrade http resources to https on request"
+-   "You must pass your app key when you instantiate Pusher"
