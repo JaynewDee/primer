@@ -15,6 +15,7 @@ class VerifyCsrfToken extends Middleware
         'webhook/*',
         'user',
         'login',
+        'logout',
         'register',
         'dashboard'
     ];
