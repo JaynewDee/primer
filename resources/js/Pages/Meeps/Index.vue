@@ -24,6 +24,8 @@ const form = useForm({
                     })
                 "
             >
+                <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+
                 <textarea
                     v-model="form.message"
                     placeholder="What's on your mind?"
