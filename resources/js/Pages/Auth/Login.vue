@@ -34,7 +34,7 @@ const submit = () => {
         </div>
 
         <form @submit.prevent="submit">
-            @csrf
+            <input type="hidden" name="_token" value="{{ csrf_token() }}" />
             <div>
                 <InputLabel for="email" value="Email" />
 

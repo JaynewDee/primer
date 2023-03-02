@@ -26,7 +26,7 @@ const submit = () => {
         <Head title="Register" />
 
         <form @submit.prevent="submit">
-            @csrf
+            <input type="hidden" name="_token" value="{{ csrf_token() }}" />
             <div>
                 <InputLabel for="name" value="Name" />
 
