@@ -59,7 +59,6 @@ const submit = () => {
                     required
                     autocomplete="current-password"
                 />
-
                 <InputError class="mt-2" :message="form.errors.password" />
             </div>
 
@@ -90,3 +89,9 @@ const submit = () => {
         </form>
     </GuestLayout>
 </template>
+
+<style>
+template {
+    dark: bg-gray-900;
+}
+</style>
